@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhD Student in Civil Engineering - University of Galway</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* Body Styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+    /* Header Styles */
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1em 0;
+      text-align: center;
+    }
+    /* Logo Container */
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0.5em;
+    }
+    .logo-container img {
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+    /* Specific sizes for each logo */
+    .logo-galway {
+      width: 80px;
+    }
+    .logo-edinburgh {
+      width: 170px; /* Bigger size for Edinburgh */
+    }
+    .logo-iust {
+      width: 80px;
+    }
+    /* Navigation */
+    nav {
+      background: #444;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.75em 1.5em;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #555;
+    }
+    /* Main Container */
+    .container {
+      max-width: 960px;
+      margin: 2em auto;
+      background: #fff;
+      padding: 2em;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    /* Section Styling */
+    .section {
+      margin-bottom: 2em;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    h2 {
+      margin-bottom: 0.5em;
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.25em;
+    }
+    h3, h4 {
+      margin-top: 1em;
+      color: #333;
+    }
+    p, li {
+      margin-bottom: 1em;
+    }
+    ul {
+      list-style: disc inside;
+      margin-left: 1em;
+    }
+    /* Download CV Button */
+    .cv-button {
+      display: inline-block;
+      background: #333;
+      color: #fff;
+      padding: 0.75em 1.5em;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1em;
+    }
+    .cv-button:hover {
+      background: #555;
+    }
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        padding: 1em;
+      }
+      .logo-container img {
+        margin: 0 5px;
+      }
+      .logo-galway,
+      .logo-iust {
+        width: 60px;
+      }
+      .logo-edinburgh {
+        width: 80px;
+      }
+    }
+    /* Additional Styling for Experience/Details (shortened for brevity) */
+    .experience, .achievement, .volunteering-item, .publication, .project {
+      margin-bottom: 1.5em;
+      padding-bottom: 1em;
+      border-bottom: 1px solid #ddd;
+    }
+    .experience:last-child,
+    .achievement:last-child,
+    .volunteering-item:last-child,
+    .publication:last-child,
+    .project:last-child {
+      border-bottom: none;
+    }
+    .experience h4,
+    .achievement h4,
+    .volunteering-item h4,
+    .publication h4,
+    .project h4 {
+      margin-bottom: 0.25em;
+      color: #222;
+    }
+    .experience .period,
+    .achievement .details,
+    .volunteering-item .details {
+      font-style: italic;
+      color: #666;
+      font-size: 0.9em;
+      margin-bottom: 0.5em;
+    }
+    .skills {
+      font-size: 0.9em;
+      background: #e9e9e9;
+      padding: 0.5em;
+      border-radius: 3px;
+      margin-top: 0.5em;
+    }
+    .publication p, .project p {
+      font-size: 0.95em;
+      color: #555;
+    }
+    .publication a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .publication a:hover {
+      text-decoration: underline;
+    }
+    /* Featured Video */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+      margin-bottom: 1em;
+    }
+    .video-container iframe, 
+    .video-container object, 
+    .video-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <!-- LinkedIn Embed Script -->
+  <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+  <script>
+    // JavaScript for interactive welcome alert
+   // window.addEventListener('load', function() {
+   //   alert('Welcome to my academic portfolio website!');
+   // });
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Logo Container -->
+    <div class="logo-container">
+      <img class="logo-galway" src="University_of_Galway_logo_2022.png" alt="University of Galway Logo">
+      <img class="logo-edinburgh" src="University_of_Edinburgh-Logo.wine.svg" alt="University of Edinburgh Logo">
+      <img class="logo-iust" src="IUST_English_Logo.png" alt="Iran University of Science and Technology Logo">
+    </div>
+    <h1>PhD Student in Civil Engineering</h1>
+    <p>University of Galway | Visiting Researcher at the University of Edinburgh</p>
+  </header>
+  
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#research-overview">Research Overview</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
+    <a href="#teaching-outreach">Teaching &amp; Outreach</a>
+    <a href="#cv">Detailed CV</a>
+    <a href="#honors">Honors &amp; Awards</a>
+    <a href="#video">Featured Video</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  
+  <!-- Main Content -->
+  <div class="container">
+    <!-- About Me Section -->
+    <section id="about" class="section" style="animation-delay: 0.2s;">
+      <h2>About Me</h2>
+      <p>I am a PhD student in Civil Engineering at the University of Galway, specializing in coastal engineering, marine energy, and oceanography. My work leverages advanced numerical modeling, high-performance computing, and high-resolution grid simulations to tackle complex renewable energy and environmental challenges.</p>
+    </section>
+    
+    <!-- Research Overview Section -->
+    <section id="research-overview" class="section" style="animation-delay: 0.4s;">
+      <h2>Research Overview</h2>
+      <p>My research focuses on developing innovative models that simulate tidal dynamics, wind and wave energy, and ocean currents. By integrating HPC and cutting-edge numerical simulation techniques, I optimize renewable energy extraction and enhance coastal resilience in the face of climate change.</p>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="section" style="animation-delay: 0.6s;">
+      <h2>Recent Projects</h2>
+      <p>Here are some of the projects I have been involved in recently:</p>
+      
+      <div class="project">
+        <h4>1. CROCO Model for Studying Currents and Climate Change Impacts (West Ireland)</h4>
+        <p>Developing a state-of-the-art CROCO model to simulate ocean currents and evaluate climate change impacts along Ireland’s west coast. This project integrates high-resolution bathymetry, atmospheric forcing, and boundary conditions to accurately capture regional hydrodynamics and renewable energy potential.</p>
+      </div>
+      
+      <div class="project">
+        <h4>2. Tidal Energy and Numerical Modeling</h4>
+        <p>Using advanced models like DIVAST to study tidal dynamics and energy extraction potential in the Shannon Estuary, analyzing parameters such as sea surface height and depth-averaged velocities for accurate energy forecasting.</p>
+      </div>
+      
+      <div class="project">
+        <h4>3. Wind and Wave Energy Analysis</h4>
+        <p>Conducting comprehensive analyses of wind and wave data from Shannon Airport and other sources to evaluate renewable energy availability throughout the year in the Shannon Estuary region.</p>
+      </div>
+      
+      <div class="project">
+        <h4>4. Machine Learning for Renewable Energy Forecasting</h4>
+        <p>Developing predictive models using machine learning to enhance forecast accuracy for wind and tidal energy production while assessing climate change impacts on these resources.</p>
+      </div>
+      
+      <div class="project">
+        <h4>5. Coastal and Marine Engineering Projects</h4>
+        <p>Designing and teaching innovative courses such as <em>Foundations of Marine &amp; Coastal Engineering: Oceans Unleashed!</em> at the University of Galway Youth Academy, introducing students to coastal protection, underwater engineering, and sustainable design.</p>
+      </div>
+      
+      <div class="project">
+        <h4>6. Water Scarcity Research (Co-supervision)</h4>
+        <p>Collaborating with Dr. Stephen Nash to investigate water scarcity in Iran through advanced statistical analysis and numerical modeling, focusing on the impacts of climate change and human activities.</p>
+      </div>
+      
+      <div class="project">
+        <h4>7. Ocean Diplomacy and Marine Energy</h4>
+        <p>Contributing to the Ocean Voices program at the University of Edinburgh, addressing capacity constraints in marine governance and amplifying the voices of ocean-dependent communities.</p>
+      </div>
+      
+      <div class="project">
+        <h4>8. Environmental Impact and Data Integration</h4>
+        <p>Integrating diverse environmental datasets—including satellite observations, remote sensing, and numerical simulations—to assess the impacts of climate change on tidal, wind, and wave energy systems for sustainable marine spatial planning.</p>
+      </div>
+      
+      <div class="project">
+        <h4>9. Hydrodynamic 3D Modeling of Gorgan Bay</h4>
+        <p>Developing a comprehensive 3D hydrodynamic model of Gorgan Bay to study its circulation patterns, wave behavior, temperature, salinity, and air pressure influences, providing critical insights for conservation and sustainable management of this biosphere reserve.</p>
+      </div>
+    </section>
+    
+    <!-- Publications Section -->
+    <section id="publications" class="section" style="animation-delay: 0.8s;">
+      <h2>Publications</h2>
+      
+      <div class="publication">
+        <h4><a href="https://www.mdpi.com/2073-4441/15/1/205" target="_blank">Characteristics of Shallow Flows in a Vegetated Pool—An Experimental Study</a></h4>
+        <p>Examines turbulent flow structures and the influence of vegetation on shear stress and bursting events in gravel-bed river pools.</p>
+      </div>
+      
+      <div class="publication">
+        <h4><a href="https://www.mdpi.com/2073-4441/15/4/720" target="_blank">Turbulence Characteristics in Mild and Steep Entrance Slopes of Pool-Riffle Sequences</a></h4>
+        <p>Investigates velocity and Reynolds stress distributions in pool-riffle sequences with varying entrance slopes, comparing laboratory and field data for improved river management.</p>
+      </div>
+      
+      <div class="publication">
+        <h4><a href="https://www.researchgate.net/profile/Saeid-Maddah-3/publication/354708277_Experimental_Investigation_of_Scouring_in_Groups_of_Parallel_Pipelines/links/614902aaa595d06017dd3316/Experimental-Investigation-of-Scouring-in-Groups-of-Parallel-Pipelines.pdf" target="_blank">Experimental Investigation of Scouring in Groups of Parallel Pipelines</a></h4>
+        <p>Determines optimal spacing for submarine pipelines by analyzing scouring behavior, providing key insights for marine infrastructure design.</p>
+      </div>
+      
+      <div class="publication">
+        <h4><a href="https://link.springer.com/article/10.1007/s40722-024-00340-2" target="_blank">Weather Window Analysis for the Deployment, Operation, and Maintenance of Marine Renewable Energy Devices in Irish Coastal Waters</a></h4>
+        <p>Evaluates the influence of wave height on site accessibility for MRE devices along Ireland’s coast using a 12-year met-ocean dataset.</p>
+      </div>
+      
+      <div class="publication">
+        <h4><a href="https://www.ijcoe.org/article_200745.html" target="_blank">3D Hydrodynamic Numerical Modeling of Gorgan Bay</a></h4>
+        <p>Presents a 3D model of Gorgan Bay that examines circulation, temperature, and current dynamics, offering insights for biosphere reserve management.</p>
+      </div>
+      
+      <p>For a complete list of my publications, please visit my 
+        <a href="https://scholar.google.com/citations?user=_Bobmm4AAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a> or 
+        <a href="https://www.researchgate.net/profile/Alireza-Eftekhari-4?ev=hdr_xprf" target="_blank">ResearchGate</a> profiles.
+      </p>
+    </section>
+    
+    <!-- Teaching & Outreach Section -->
+    <section id="teaching-outreach" class="section" style="animation-delay: 1s;">
+      <h2>Teaching &amp; Outreach</h2>
+      <p>Beyond research, I am committed to education and community engagement. My efforts include:</p>
+      
+      <div class="volunteering-item">
+        <h4>Course Development &amp; Instruction</h4>
+        <p class="details">Foundations of Marine &amp; Coastal Engineering: Oceans Unleashed!</p>
+        <p>I have designed and will be teaching this innovative course at the University of Galway Youth Academy, introducing students to coastal protection, underwater engineering, and sustainable design.</p>
+      </div>
+      
+      <div class="volunteering-item">
+        <h4>Volunteer &amp; Leadership Roles</h4>
+        <p class="details">Galway Energy Summit, Laboratory Assistant, Ambassador</p>
+        <p>I've organized events like the Galway Energy Summit, volunteered at university open days, and served as an ambassador to promote sustainability.</p>
+      </div>
+      
+      <div class="experience">
+        <h4>Teaching Experience</h4>
+        <p class="period">Various roles at the University of Galway</p>
+        <p>I have served as a Graduate Teaching Assistant, Teaching Assistant, and Guest Lecturer in coastal and marine engineering.</p>
+      </div>
+    </section>
+    
+    <!-- Detailed CV Section -->
+    <section id="cv" class="section" style="animation-delay: 1.2s;">
+      <h2>Detailed CV</h2>
+      <h3>Education</h3>
+      <ul>
+        <li>
+          <img src="University_of_Galway_logo_2022.png" alt="University of Galway Logo" style="width:50px; vertical-align:middle; margin-right:10px;">
+          <strong>PhD in Civil Engineering</strong><br>
+          University of Galway
+        </li>
+        <li>
+          <img src="IUST_English_Logo.png" alt="Iran University of Science and Technology Logo" style="width:50px; vertical-align:middle; margin-right:10px;">
+          <strong>Master of Science in Civil Engineering</strong> (Coastal Engineering, Ports, and Marine Structures)<br>
+          Iran University of Science and Technology
+        </li>
+      </ul>
+      <h3>Professional Experience</h3>
+      
+      <div class="experience">
+        <h4>Graduate Teaching Assistant</h4>
+        <p class="period">University of Galway | Jan 2025 – Present</p>
+        <p>Assisting in the CE462: Coastal and Offshore Engineering course.</p>
+        <div class="skills">
+          <strong>Skills:</strong> Coastal Engineering, Marine Engineering, Wave Propagation, Sediment Transport, Teaching
+        </div>
+      </div>
+      
+      <div class="experience">
+        <h4>Visiting PhD Student</h4>
+        <p class="period">University of Edinburgh | Nov 2023 – Present</p>
+        <p>Participating in the Ocean Voices program and marine energy research.</p>
+        <div class="skills">
+          <strong>Skills:</strong> Ocean Diplomacy, Marine Energy, Ocean Governance
+        </div>
+      </div>
+      
+      <div class="experience">
+        <h4>Researcher</h4>
+        <p class="period">Ryan Institute | Mar 2023 – Present</p>
+        <p>Working on projects in ocean energy and physical oceanography.</p>
+        <div class="skills">
+          <strong>Skills:</strong> Ocean Energy, Physical Oceanography, Research
+        </div>
+      </div>
+      
+      <div class="experience">
+        <h4>Co-Supervisor</h4>
+        <p class="period">University of Galway | Sep 2023 – Jun 2024</p>
+        <p>Guiding research on water scarcity in Iran.</p>
+        <div class="skills">
+          <strong>Skills:</strong> Modeling, Research Supervision, Statistical Analysis
+        </div>
+      </div>
+      
+      <div class="experience">
+        <h4>Teaching Assistant</h4>
+        <p class="period">University of Galway | Sep 2023 – Present</p>
+        <p>Assisting in lab sessions (CE227) for civil engineering students.</p>
+        <div class="skills">
+          <strong>Skills:</strong> Analytical Skills, Report Writing, Communication
+        </div>
+      </div>
+      
+      <div class="experience">
+        <h4>Guest Lecturer</h4>
+        <p class="period">University of Galway | Nov 2023</p>
+        <p>Delivered lectures on water scarcity and environmental management.</p>
+        <div class="skills">
+          <strong>Skills:</strong> Guest Lecturing, Water Resource Management
+        </div>
+      </div>
+      
+      <div class="experience">
+        <h4>Construction Inspector</h4>
+        <p class="period">Heram Tarn Payab | 2016 – 2022</p>
+        <p>Oversaw construction projects and site inspections.</p>
+        <div class="skills">
+          <strong>Skills:</strong> Construction Inspections, Civil Engineering
+        </div>
+      </div>
+      
+      <div class="experience">
+        <h4>Construction Field Engineer</h4>
+        <p class="period">Heram Tarh Payab | 2016 – 2022</p>
+        <p>Managed on-site construction activities and documentation.</p>
+        <div class="skills">
+          <strong>Skills:</strong> Project Management, Communication
+        </div>
+      </div>
+      
+      <div class="experience">
+        <h4>Construction Engineer (Intern)</h4>
+        <p class="period">Batis Engineering | 2020 – 2021</p>
+        <p>Assisted in construction inspections and report analyses.</p>
+        <div class="skills">
+          <strong>Skills:</strong> Report Writing, Construction Inspections
+        </div>
+      </div>
+      
+      <div class="experience">
+        <h4>Research Assistant</h4>
+        <p class="period">Iran University of Science and Technology | 2019 – 2021</p>
+        <p>Supported research in hydrology and wave propagation.</p>
+        <div class="skills">
+          <strong>Skills:</strong> Data Analysis, Hydrology, Wave Propagation
+        </div>
+      </div>
+      
+      <div class="experience">
+        <h4>Construction Engineer (Intern)</h4>
+        <p class="period">CCL | 2019 – 2020</p>
+        <p>Supported project management and site inspections.</p>
+        <div class="skills">
+          <strong>Skills:</strong> Project Management, Construction Inspections
+        </div>
+      </div>
+      
+      <a href="CV.pdf" class="cv-button" download>Download My CV</a>
+    </section>
+    
+    <!-- Honors & Awards Section -->
+    <section id="honors" class="section" style="animation-delay: 1.4s;">
+      <h2>Honors &amp; Awards</h2>
+      
+      <div class="achievement">
+        <h4>The Most Promising Project</h4>
+        <p class="details">Issued by The Innovation Office at the University of Galway · Sep 2023<br><em>Associated with University of Galway</em></p>
+        <p>Selected for my work on tidal energy and its climate change susceptibility, as part of the Impact Series funded by Horizon Europe.</p>
+      </div>
+      
+      <div class="achievement">
+        <h4>First Rank</h4>
+        <p class="details">Issued by Iran University of Science and Technology · Sep 2022<br><em>Associated with Iran University of Science and Technology</em></p>
+        <p>Recognized for outstanding academic performance.</p>
+      </div>
+    </section>
+    
+    <!-- Featured Video Section -->
+    <section id="video" class="section" style="animation-delay: 1.6s;">
+      <h2>Featured Video</h2>
+      <!-- Embedded LinkedIn Post -->
+      <blockquote class="linkedin-post" data-lang="en_US" data-theme="light" data-url="https://www.linkedin.com/feed/update/urn:li:activity:7163517266930712576/"></blockquote>
+      <p>If the video does not load, please <a href="https://www.linkedin.com/feed/update/urn:li:activity:7163517266930712576/" target="_blank">click here</a> to view it on LinkedIn.</p>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section" style="animation-delay: 1.8s;">
+      <h2>Contact</h2>
+      <p>If you wish to get in touch, please email me at <a href="mailto:a.eftekhari2@universityofgalway.ie">a.eftekhari2@universitypfgalway.ie</a>.</p>
+    </section>
+    
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Alireza Eftekhari. All rights reserved.</p>
+  </footer>
+</body>
+</html>
